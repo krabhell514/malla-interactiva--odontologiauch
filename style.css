@@ -1,40 +1,57 @@
 body {
   font-family: sans-serif;
-  background-color: #ffe6f0;
+  background-color: #fff0f5;
+  color: #333;
   margin: 0;
   padding: 20px;
-  text-align: center;
 }
 
 h1 {
+  text-align: center;
   color: #d63384;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 10px;
+.malla {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.año {
+  margin-bottom: 40px;
+}
+
+.año h2 {
+  color: #c2185b;
+  border-bottom: 2px solid #c2185b;
+  padding-bottom: 5px;
+}
+
+.semestre {
+  margin-bottom: 20px;
+}
+
+.semestre h3 {
+  color: #ad1457;
+}
+
+.ramos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .ramo {
   background-color: #f8bbd0;
   border: 2px solid #d63384;
-  padding: 15px;
-  border-radius: 10px;
-  cursor: not-allowed;
-  transition: background-color 0.3s ease;
-  opacity: 0.5;
+  border-radius: 8px;
+  padding: 12px;
+  min-width: 180px;
+  text-align: center;
   font-size: 14px;
-  font-weight: bold;
-}
-
-.ramo.aprobado {
-  background-color: #e91e63;
-  color: white;
-  opacity: 1;
+  cursor: not-allowed;
+  opacity: 0.5;
+  transition: 0.3s;
 }
 
 .ramo.habilitado {
@@ -42,3 +59,7 @@ h1 {
   opacity: 1;
 }
 
+.ramo.aprobado {
+  background-color: #e91e63;
+  color: white;
+}
